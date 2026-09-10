@@ -1,0 +1,15 @@
+[package]
+name = "laboratory-practice"
+version = "0.1.0"
+edition = "2024"
+build = "build.rs"
+
+[dependencies]
+cortex-m = "0.7.9"
+cortex-m-rt = "0.7.6"
+rtt-target = "0.6.2"
+panic-rtt-target = "0.2.0"
+
+[dependencies.stm32f4]
+version = "0.16.0"
+features = ["stm32f411"]

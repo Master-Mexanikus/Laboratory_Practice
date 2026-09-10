@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug STM32F411RE",
+            "type": "probe-rs-debug",
+            "request": "launch",
+            "chip": "STM32F411RETx",
+            "cwd": "${workspaceFolder}",
+            "flashingConfig": {
+                "flashingEnabled": true
+            },
+            "coreConfigs": [
+                {
+                    "coreIndex": 0,
+                    "programBinary": "${workspaceFolder}/target/thumbv7em-none-eabihf/debug/laboratory-practice",
+                    "svdFile": "${workspaceFolder}/STMDevices/STM32F411xe/STM32F411.svd"
+                }
+            ]
+        }
+    ]
+}
